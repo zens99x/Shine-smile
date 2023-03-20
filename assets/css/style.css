@@ -10,3 +10,195 @@ body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
+
+:root {
+    --primary-color: #10375c;
+}
+
+/* ==== Common */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    border-radius: 99px;
+    min-width: 205px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+    background: #2e80ce;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+/* ========================== Header ========================= */
+
+/* ====== Logo ====== */
+.header {
+    min-height: 100vh;
+    background: var(--primary-color);
+    padding-top: 30px;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-flex;
+}
+
+.logo__text {
+    color: #ffffff;
+    text-align: right;
+    margin-left: 6px;
+    line-height: 1.6rem;
+}
+.logo .logo__text--top {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.logo .logo__text--bot {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+    margin-left: auto;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    position: relative;
+    display: flex;
+    font-weight: 300;
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #c9d2da;
+}
+
+.navbar li.navbar__tab--active .navbar__link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #ffffff;
+}
+.navbar li.navbar__tab--active .navbar__link::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    left: 8px;
+    bottom: 19px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+/* .navbar__link {
+    text-shadow: 1px 0 0 currentColor;
+} */
+/* ====== Actions ====== */
+.action {
+    margin-left: auto;
+}
+
+.action__login {
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-right: 28px;
+    color: #c9d2da;
+}
+
+.action__signup {
+    height: 44px;
+    line-height: 43px;
+    min-width: 104px;
+}
+
+/* ====== Hero ====== */
+
+.hero {
+    padding: 76px 0 110px;
+}
+
+.hero__body {
+    display: flex;
+}
+
+.hero__content {
+    width: 44%;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin: 22px 0 38px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__book {
+    display: flex;
+    align-items: center;
+}
+
+.hero__book--number {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero__media {
+    padding-left: 113px;
+    display: flex;
+    width: 56%;
+}
+
+.hero__media img:first-child {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__media img:nth-child(2) {
+    margin: 65px 0;
+    width: 210px;
+    height: 410px;
+    border-radius: 0px 6px 6px 0px;
+    object-fit: cover;
+}

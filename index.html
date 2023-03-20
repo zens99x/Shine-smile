@@ -28,16 +28,76 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Shine smile</title>
 </head>
 
 <body>
-    <h1>Exceptional dental care for all ages.</h1>
+    <header class="header">
+        <div class="container">
+            <!-- Header -->
+            <div class="header-top">
+                <!-- Logo -->
+                <a href="#!">
+                    <div class="logo">
+                        <img src="./assets/img/logo.svg" alt="shine smile">
+                        <span class="logo__text">
+                            <span class="logo__text--top">shine</span>
+                            <span class="logo__text--bot">smile</span>
+                        </span>
+                    </div>
+                </a>
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__tab navbar__tab--active">
+                            <a href="#!" class="navbar__link">Home</a>
+                        </li>
+                        <li class="navbar__tab ">
+                            <a href="#!" class="navbar__link">Services</a>
+                        </li>
+                        <li class="navbar__tab">
+                            <a href="#!" class="navbar__link">About</a>
+                        </li>
+                        <li class="navbar__tab">
+                            <a href="#!" class="navbar__link">Doctors</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Actions -->
+                <div class="action">
+                    <a href="#!" class="action__login">Log In</a>
+                    <a href="#!" class="action__signup btn">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- Hero -->
+            <section class="hero">
+                <!-- Hero book -->
+                <div class="hero__body">
+                    <section class="hero__content">
+                        <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
+                        <p class="hero__desc">Exceptional dental care for all ages. Your great smile begins with a great
+                            dentist.</p>
+                        <div class="hero__book">
+                            <a href="#!" class="btn">Book Online</a>
+                            <span class="hero__book--number">or call (123) 456-7890</span>
+                        </div>
+                    </section>
+                    <div class="hero__media">
+                        <img src="./assets/img/hero.png" alt="">
+                        <img src="./assets/img/hero1.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <script src="./assets/js/navbar.js"></script>
 </body>
 
 </html>
