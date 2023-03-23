@@ -377,3 +377,51 @@ a {
     /* identical to box height, or 175% */
     color: #575f66;
 }
+
+/* ====== Feature ====== */
+
+.feature {
+    padding: 170px 0;
+}
+
+.feature__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__images {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    filter: drop-shadow(0px 14px 28px rgba(0, 0, 0, 0.07));
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 332px;
+    height: 370px;
+}
+
+.feature__content {
+    width: 40%;
+}
+
+.feature__content--heading {
+    margin-top: 82px;
+}
+
+.feature__content--desc {
+    margin: 18px 0 38px;
+}
