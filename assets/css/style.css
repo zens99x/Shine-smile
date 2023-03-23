@@ -44,6 +44,23 @@ a {
 .btn:hover {
     cursor: pointer;
 }
+
+.heading {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    /* identical to box height, or 120% */
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* or 167% */
+    color: #575f66;
+}
 /* ========================== Header ========================= */
 
 /* ====== Logo ====== */
@@ -203,29 +220,20 @@ a {
     object-fit: cover;
 }
 
-/* ====== Hero ====== */
+/* ====== Service ====== */
 
 .service {
     margin: 170px 0;
 }
 
 .service--heading {
-    font-weight: 600;
-    font-size: 5rem;
-    line-height: 1.2;
     text-align: center;
-    letter-spacing: -0.02em;
-    color: #10375c;
 }
 
 .service--desc {
     width: 468px;
     margin: 18px auto auto;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 1.67;
     text-align: center;
-    color: #575f66;
 }
 
 .service__body {
@@ -296,4 +304,76 @@ a {
 
 .service--btn {
     margin-top: 55px;
+}
+
+/* ====== How it works ====== */
+.hiw {
+    background: #f7fbff;
+}
+
+.hiw__body {
+    padding: 100px 0;
+}
+
+.hiw--desc {
+    margin-top: 18px;
+    width: 468px;
+}
+
+.hiw__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.hiw__list--item {
+    border: 16px solid #eaf6ff;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 44px;
+    transition: 0.25s;
+}
+
+.hiw__list--item:hover {
+    transform: translateY(-16px);
+    border: 16px solid #2e80ce;
+}
+
+.hiw__list--item:hover .hiw__list--link {
+    color: #2e80ce;
+}
+
+.hiw__list--img {
+    width: 72px;
+    height: 72px;
+}
+
+.hiw__list--heading {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.38;
+    /* identical to box height, or 138% */
+    color: #10375c;
+}
+
+.hiw__list--desc {
+    margin-top: 28px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    /* or 175% */
+    color: #575f66;
+}
+
+.hiw__list--link {
+    display: inline-block;
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    /* identical to box height, or 175% */
+    color: #575f66;
 }
