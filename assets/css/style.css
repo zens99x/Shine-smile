@@ -471,9 +471,11 @@ a {
     /* identical to box height, or 175% */
     text-align: center;
     color: #10375c;
+    cursor: pointer;
 }
 
 .member__item--desc {
+    cursor: pointer;
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 1.86;
@@ -511,4 +513,49 @@ a {
     background: #2e80ce;
     border-color: #2e80ce;
     color: #fff;
+}
+
+/* ====== Download ====== */
+
+.download {
+    margin-top: 265px;
+}
+
+.download__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background: #2e80ce;
+    border-radius: 4px;
+}
+
+.download__img {
+    display: block;
+    margin-top: -95px;
+    width: 284px;
+    height: 522px;
+}
+
+.download__content {
+    max-width: 586px;
+}
+
+.download__content--heading,
+.download__content--desc {
+    color: #ffffff;
+}
+
+.download__content--heading {
+    max-width: 489px;
+}
+
+.download__content--desc {
+    margin-top: 18px;
+}
+
+.download__store {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
 }
